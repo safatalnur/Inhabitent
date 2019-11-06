@@ -40,7 +40,7 @@ plugins/*
 # Ignore everything in "themes" except the active theme. #
 # ========================================================== #
 themes/*
-!themes/redstarter/
+!themes/inhabitent/
 # Ignore WP Migrate DB Dir #
 # =============== #
 uploads/wp-migrate-db/
