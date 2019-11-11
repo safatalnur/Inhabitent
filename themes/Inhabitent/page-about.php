@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<section class="about">
+
 <?php if( have_posts() ) :
 
 //The WordPress Loop: loads post content 
@@ -8,7 +10,7 @@
     
     <h2><?php the_title(); ?></h2>
     <?php the_post_thumbnail('large');?>
-    <h3><?php the_permalink();?></h3>
+    <!-- <h3><?php the_permalink();?></h3> -->
     <?php the_content(); ?>
     
     <!-- Loop ends -->
@@ -19,3 +21,6 @@
 <?php else : ?>
         <p>No posts found</p>
 <?php endif;?>
+
+</section>
+<?php get_footer();?>

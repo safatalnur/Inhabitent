@@ -1,0 +1,33 @@
+.about {
+        
+        img {
+            display: grid;
+            position: relative;
+            grid-template-columns: auto;
+        }
+            
+
+        h2 {
+            display: grid;
+            text-align: center;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 1;
+            color: white;
+            text-transform: uppercase;
+            font-size: 60px;
+
+        }
+}
+
+
+.about p {
+    display: grid;
+    grid-template-columns: 700px;
+    justify-content: center;
+    text-align: justify;
+    
+    
+}
