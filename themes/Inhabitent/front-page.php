@@ -2,20 +2,21 @@
 <!-- <h1><i class="fas fa-search"></i></h1> -->
 <!-- inserting products -->
 
+<section class="front-page-header">
 <?php if( have_posts() ) :
 
 //The WordPress Loop: loads post content 
     while( have_posts() ) :
         the_post(); ?>
 
-        <?php the_title();
+        <?php 
         the_post_thumbnail('large');
 
-        the_content();?>
+        // the_content();?>
     <?php endwhile;?>
 
 <?php the_posts_navigation();?>
-
+</section>
 
 <div class="shop-stuff">
     <h2>SHOP STUFF</h2>

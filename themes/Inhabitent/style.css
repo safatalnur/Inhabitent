@@ -110,7 +110,7 @@ h2 {
   position: absolute;
   top: 5%;
   font-family: "Novecento Sans Web";
-  z-index: 1; }
+  z-index: 9999; }
 
 .menu a {
   color: white;
@@ -186,8 +186,11 @@ footer {
 
 img {
   width: 100%;
-  height: 500px;
-  background-size: cover; }
+  height: 600px;
+  background-size: cover;
+  position: relative;
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%); }
 
 .shop-stuff {
   padding: 30px;
@@ -207,6 +210,8 @@ img {
       justify-content: space-around; }
 
 .about img {
+  height: 100%;
+  display: grid;
   position: relative;
   grid-template-columns: auto;
   -webkit-filter: brightness(60%);
