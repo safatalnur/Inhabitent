@@ -2,6 +2,21 @@
 <!-- <h1><i class="fas fa-search"></i></h1> -->
 <!-- inserting products -->
 
+<?php if( have_posts() ) :
+
+//The WordPress Loop: loads post content 
+    while( have_posts() ) :
+        the_post(); ?>
+
+        <?php the_title();
+        the_post_thumbnail('large');
+
+        the_content();?>
+    <?php endwhile;?>
+
+<?php the_posts_navigation();?>
+
+
 <div class="shop-stuff">
     <h2>SHOP STUFF</h2>
 </div>
@@ -32,14 +47,7 @@ $terms = get_terms( array (
 
 <?php endforeach;?> -->
 
-<?php if( have_posts() ) :
 
-//The WordPress Loop: loads post content 
-    while( have_posts() ) :
-        the_post(); ?>
-
-        <?php the_title();
-        the_content();?>
 
     
     <?php
@@ -58,9 +66,8 @@ $terms = get_terms( array (
     <?php endforeach;?>
     
     <!-- <h1>Hey this is the home page</h1> -->
-    <?php endwhile;?>
+   
 
-    <?php the_posts_navigation();?>
 
 <?php else : ?>
         <p>No posts found</p>

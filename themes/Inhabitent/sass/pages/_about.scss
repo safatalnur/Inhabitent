@@ -1,9 +1,13 @@
 .about {
         
         img {
-            display: grid;
+            // height: 100%;
+            // display: grid;
             position: relative;
             grid-template-columns: auto;
+            filter: brightness(60%);
+
+            
         }
             
 
@@ -12,22 +16,34 @@
             text-align: center;
             position: absolute;
             top: 40%;
-            left: 50%;
-            transform: translate(-50%,-50%);
+            left: 45%;
+            // transform: translate(-50%,-50%);
             z-index: 1;
             color: white;
             text-transform: uppercase;
-            font-size: 60px;
-
+            font-size: 40px;
         }
 }
 
+.about h3 {
+    padding: 25px;
+    font-size: 30px;
+    font-family: 'Novecento Sans Web DemiBold';
+}
 
 .about p {
     display: grid;
-    grid-template-columns: 700px;
+    grid-template-columns: 800px;
     justify-content: center;
     text-align: justify;
-    
+    font-family: Merriweather Web Light; 
+    color: #404040;
+    padding-bottom: 20px;
+
+
+
+    // letter-spacing: 1.5px;
     
 }
+
+

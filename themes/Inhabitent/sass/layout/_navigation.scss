@@ -1,9 +1,13 @@
 .menu{
     display: grid;
     grid-template-columns: 17fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
     color: white;
     position: absolute;
     top: 5%;
+    font-family: $nav-font;
+   
+
     
     // transform: translate(-50%,-50%);
     z-index: 1;
@@ -11,6 +15,9 @@
     
 .menu a {
     color: white;
+    text-decoration: none;
+    text-align: center;
+
 }
 
 #menu-item-39 {

@@ -1,0 +1,24 @@
+$font-size: 16px;
+// $main-font: 'fantasy';
+$nav-font: 'Novecento Sans Web';
+$header-font: 'Novecento Sans Web DemiBold';
+$line-height: 1.75rem;
+$line-spacing: 1.5rem;
+
+
+body {
+    // font-family: $main-font;
+    line-height: $line-height;
+    
+
+
+}
+
+h2 {
+    font-family: $header-font;
+}
+
+// h3 {
+//     font-family: $header-font;
+// }
+

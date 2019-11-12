@@ -7,7 +7,7 @@
 */
 
 @font-face {
-  font-family: 'Merriweather Web';
+  font-family: 'Merriweather Web Light';
   src: url('fonts/merriweather-light-webfont.eot');
   src: url('fonts/merriweather-light-webfont.eot?#iefix') format('embedded-opentype'),
        url('fonts/merriweather-light-webfont.woff2') format('woff2'),
@@ -19,7 +19,7 @@
 }
 
 @font-face {
-  font-family: 'Merriweather Web';
+  font-family: 'Merriweather Web LightItalic';
   src: url('fonts/merriweather-lightitalic-webfont.eot');
   src: url('fonts/merriweather-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
        url('fonts/merriweather-lightitalic-webfont.woff2') format('woff2'),
@@ -31,7 +31,7 @@
 }
 
 @font-face {
-  font-family: 'Merriweather Web';
+  font-family: 'Merriweather Web Bold';
   src: url('fonts/merriweather-bold-webfont.eot');
   src: url('fonts/merriweather-bold-webfont.eot?#iefix') format('embedded-opentype'),
        url('fonts/merriweather-bold-webfont.woff2') format('woff2'),
@@ -43,7 +43,7 @@
 }
 
 @font-face {
-  font-family: 'Merriweather Web';
+  font-family: 'Merriweather Web BoldItalic';
   src: url('fonts/merriweather-bolditalic-webfont.eot');
   src: url('fonts/merriweather-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
        url('fonts/merriweather-bolditalic-webfont.woff2') format('woff2'),
