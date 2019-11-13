@@ -1,13 +1,20 @@
 // .front-page-header {
     img {
         width: 100%;
-        height: 600px;
-        background-size: cover;
+        // height: 500px;
+        // background-size: cover;
         position: relative;
         filter: brightness(60%);
     }
 
-
+.front-logo {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    left: 40%;
+}
 
 
 
@@ -15,16 +22,8 @@
     padding: 30px;
     text-align: center;
 }
-.shop-item {
-    width: 100%;
-    height: 100%;;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    // text-align: center;
 
-
-    
-    
-    
+.product_type_blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }

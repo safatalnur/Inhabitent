@@ -11,12 +11,19 @@
 
         <?php 
         the_post_thumbnail('large');
-
-        // the_content();?>
+        ?>
+   
     <?php endwhile;?>
-
+    <div class="front-logo">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg" alt="inhabitent logo"/>
+    </div>
 <?php the_posts_navigation();?>
 </section>
+<?php $product_types = get_terms('product_type', array(
+    'hide_empty' => false,
+    'orderby' => 'name',
+    'order' => 'ASC'
+)); ?>
 
 <div class="shop-stuff">
     <h2>SHOP STUFF</h2>
@@ -24,29 +31,30 @@
 
 <div class="shop-item">
 
-<?php 
-$terms = get_terms( array (
-    'taxonomy' => 'product-type',
-    'hide_empty' => 0,
+    <?php 
+        $terms = get_terms( array (
+            'taxonomy' => 'product-type',
+            'hide_empty' => false,
     ));
     if (! empty($terms)):
-?>
+    ?>
     <div class="product_type_blocks">
   
-        <?php foreach ($terms as $term):?>
+        <?php foreach ($terms as $term):
+            ?>
         <div class="product_type_block_wrapper">
-            <img src="<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $term->slug;?>do.svg" alt="<?php echo $term->name;?>" />
-            <p><?php echo $term -> descripton; ?></p>
-            <a href="<?php echo get_term_link( $term ); ?>" class="btn" ><?php $term->name;?> STUFF</a>
+        <img src="<?php echo get_stylesheet_directory_uri();?>/images/product-type-icons/<?php echo $term->slug;?>.svg"/>
+            <!-- <p><?php echo $term -> descripton; ?></p> -->
+            <!-- <a href="<?php echo get_term_link( $term ); ?>" class="btn" ><?php $term->name;?> STUFF</a> -->
         </div>
-        <?php endforeach; wp_reset_postdata();?>
+        <?php endforeach;?>
     </div>
     <?php endif; ?>
 </div>
 <!-- <?php foreach($terms as $term):?>
     <a href="<?php echo "product-type/" .$term->slug;?><?php echo $term->name ;?></a>
 
-<?php endforeach;?> -->
+<?php endforeach;?>
 
 
 
@@ -66,7 +74,7 @@ $terms = get_terms( array (
         </div>
     <?php endforeach;?>
     
-    <!-- <h1>Hey this is the home page</h1> -->
+    <h1>Hey this is the home page</h1> -->
    
 
 

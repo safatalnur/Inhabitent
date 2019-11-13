@@ -9,7 +9,7 @@
     <h2><?php the_title(); ?></h2>
     <?php the_post_thumbnail('large');?>
     <!-- <h3><?php the_permalink();?></h3> -->
-    <?php the_content(); ?>
+    <!-- <?php the_content(); ?> -->
     
     <!-- Loop ends -->
     <?php endwhile;?>
@@ -20,5 +20,5 @@
         <p>No posts found</p>
 <?php endif;?>
 
-<?php get_sidebar();?>
+    
 <?php get_footer();?>

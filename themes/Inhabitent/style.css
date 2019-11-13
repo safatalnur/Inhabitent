@@ -104,16 +104,17 @@ h2 {
 
 .menu {
   display: grid;
-  grid-template-columns: 17fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 12fr 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
   color: white;
   position: absolute;
   top: 5%;
   font-family: "Novecento Sans Web";
+  border-bottom: 1px solid red;
   z-index: 9999; }
 
 .menu a {
-  color: white;
+  color: red;
   text-decoration: none;
   text-align: center; }
 
@@ -186,28 +187,25 @@ footer {
 
 img {
   width: 100%;
-  height: 600px;
-  background-size: cover;
   position: relative;
   -webkit-filter: brightness(60%);
           filter: brightness(60%); }
+
+.front-logo {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  left: 40%; }
 
 .shop-stuff {
   padding: 30px;
   text-align: center; }
 
-.shop-item {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+.product_type_blocks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; }
 
 .about img {
   height: 100%;
@@ -243,3 +241,18 @@ img {
   font-family: Merriweather Web Light;
   color: #404040;
   padding-bottom: 20px; }
+
+body {
+  margin-top: 30px;
+  width: 100%; }
+
+.findus {
+  display: grid;
+  grid-template-columns: 70% 30%; }
+
+.widgettitle {
+  letter-spacing: .2rem; }
+
+.widget-area {
+  margin-top: 50px;
+  line-height: 2.0rem; }

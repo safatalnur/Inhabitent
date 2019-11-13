@@ -1,22 +1,28 @@
 <?php get_header(); ?>
 
-<?php if( have_posts() ) :
-//The WordPress Loop: loads post content 
-    while( have_posts() ) :
-        the_post(); ?>
+<?php the_posts_navigation();?>
+
+<div class="findus">
+    <div class="findus-form">
+            <?php if( have_posts() ) :
+            //The WordPress Loop: loads post content 
+                while( have_posts() ) :
+                    the_post(); ?>
     
-    <h2><?php the_title(); ?></h2>
-    <?php the_content(); ?>
+                    <h2><?php the_title(); ?></h2>
+            <?php the_content(); ?>
     
-    <!-- Loop ends -->
-    <?php endwhile;?>
+            <!-- Loop ends -->
+            <?php endwhile;?>
 
-    <?php the_posts_navigation();?>
+            <?php else : ?>
+                <p>No posts found</p>
+            <?php endif;?>
+    </div>
 
-<?php else : ?>
-        <p>No posts found</p>
-<?php endif;?>
-
-<?php get_sidebar();?>
+    <div class="findus-sidebar">
+            <?php get_sidebar();?>
+    </div>
+</div>
     
 <?php get_footer();?>
