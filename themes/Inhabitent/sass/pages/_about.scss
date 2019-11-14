@@ -10,16 +10,12 @@
             grid-template-columns: auto;
             position: relative;
             filter: brightness(50%);
-            // display: grid;
-            // grid-template-columns: auto;
             
         }
 
         h2 {
-            // display: grid;
             position: absolute;
-            top: 22.5%;
-            // top: 50%;
+            top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
             z-index: 1;

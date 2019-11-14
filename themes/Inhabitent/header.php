@@ -11,5 +11,8 @@
 <!-- <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/home-hero.jpg" /> -->
 <!-- <a href="/inhabitent/"><img class="home-link" src="<?php echo get_stylesheet_directory_uri();?>\images\logos\inhabitent-logo-tent.svg"></a> -->
 <?php wp_nav_menu(array('theme_location' => 'primary'));?> 
+<?php echo get_search_form();?>
+
+
 <!-- <h1><i class="fas fa-search"></i></h1> -->
 <!-- <h1><?php bloginfo('name');?></h1> -->

@@ -105,7 +105,7 @@ h2 {
 .menu {
   width: 100%;
   display: grid;
-  grid-template-columns: 12fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 5fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
   color: white;
   position: absolute;
@@ -210,25 +210,37 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr; }
 
+.adventures-header {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 25px;
+  padding: 25px;
+  border-bottom: 1px dashed #c8c8c8; }
+
 .adventures-main {
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-gap: 20px; }
-  .adventures-main p {
-    position: absolute;
-    color: white;
-    z-index: 9999; }
-  .adventures-main img {
-    position: relative;
-    height: 450px; }
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-template-columns: 40% 40%;
+  grid-gap: 20px;
+  margin: 30px 0 80px; }
+
+.adventures-title img {
+  position: relative;
+  height: 450px; }
 
 .adventures-title p {
-  font-size: 20px;
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-family: Merriweather Web Light;
+  font-size: 40px;
   margin-top: 50px; }
 
 .adventures-title a {
   margin-top: 90px;
-  margin-left: 40px;
   text-decoration: none;
   position: absolute;
   color: white;
@@ -243,9 +255,22 @@ img {
           justify-content: center; }
   .adventures-content h2 {
     font-size: 20px;
+    letter-spacing: .2rem;
     font-family: 'Novecento Sans Web DemiBold'; }
   .adventures-content h4 {
     font-family: 'Novecento Sans Web'; }
+
+.adventures-social {
+  display: grid;
+  grid-template-columns: 100px 150px 100px;
+  grid-gap: 5px;
+  margin-top: 20px; }
+  .adventures-social li {
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: Novecento Sans Web; }
 
 .about-image img {
   width: 100%;
@@ -259,7 +284,7 @@ img {
 
 .about-image h2 {
   position: absolute;
-  top: 22.5%;
+  top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -298,3 +323,40 @@ body {
 .widget-area {
   margin-top: 50px;
   line-height: 2.0rem; }
+
+.shop-header h2 {
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 0.5rem;
+  margin-bottom: 20px; }
+
+.product-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none; }
+  .product-nav li {
+    padding: 0px 20px; }
+
+.shop-picture {
+  display: grid; }
+  .shop-picture img {
+    width: 200px;
+    height: 200px; }
+
+.product-type-header {
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: 1px dashed #c8c8c8; }
+  .product-type-header h2 {
+    font-size: 24px;
+    padding: 20px; }
+  .product-type-header p {
+    margin-bottom: 30px; }

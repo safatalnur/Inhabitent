@@ -1,5 +1,6 @@
 <?php get_header(); ?>
-<!-- <h1><i class="fas fa-search"></i></h1> -->
+<h1><i class="fas fa-search"></i></h1>
+
 <!-- inserting products -->
 
 <section class="front-page-header">
@@ -8,6 +9,7 @@
 //The WordPress Loop: loads post content 
     while( have_posts() ) :
         the_post(); ?>
+
 
         <?php 
         the_post_thumbnail('large');
@@ -45,7 +47,7 @@
         <div class="product_type_block_wrapper">
         <img src="<?php echo get_stylesheet_directory_uri();?>/images/product-type-icons/<?php echo $term->slug;?>.svg"/>
             <!-- <p><?php echo $term -> descripton; ?></p> -->
-            <!-- <a href="<?php echo get_term_link( $term ); ?>" class="btn" ><?php $term->name;?> STUFF</a> -->
+            <a href="<?php echo get_term_link( $term ); ?>" class="btn" ><?php $term->name;?> STUFF</a>
         </div>
         <?php endforeach;?>
     </div>

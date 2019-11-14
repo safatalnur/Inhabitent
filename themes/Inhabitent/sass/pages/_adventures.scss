@@ -1,34 +1,48 @@
+.adventures-header {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding: 25px;
+    border-bottom: 1px dashed #c8c8c8;
+
+}
+
+
+
 .adventures-main {
     display: grid;
-    // width: 80%;
-    
-    grid-template-columns: 50% 50%;
-    // column-gap: 20px;
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: 40% 40%;
     grid-gap: 20px;
-
-    p {
-        position: absolute;
-        color: white;
-        z-index: 9999;
-        
-    }
+    margin: 30px 0 80px;
     
-    img {
-        position: relative;
-        height: 450px;
-    }
+
+    
 
     
 }
 
 .adventures-title {
+    img {
+        position: relative;
+        height: 450px;
+    }
+
     p {
-        font-size: 20px;
+        // display: flex;
+        // flex-wrap: wrap;
+        position: absolute;
+        z-index: 1;
+        color: white;
+        font-family: Merriweather Web Light;        
+        font-size: 40px;
+        // line-height: 1.75px;
         margin-top: 50px;
+        
     }
     a {
         margin-top: 90px;
-        margin-left: 40px;
         text-decoration: none;
         position: absolute;
         color: white;
@@ -37,6 +51,7 @@
     }
 }
 
+
 .adventures-content {
     display: grid;
     grid-template-columns: 800px;
@@ -44,9 +59,29 @@
 
     h2 {
         font-size: 20px;
+        letter-spacing: .2rem;
         font-family: 'Novecento Sans Web DemiBold';
     }
     h4 {
         font-family: 'Novecento Sans Web';
+    }
+}
+.adventures-content-text {
+    // margin-top: 20px;
+}
+
+.adventures-social {
+    display: grid;
+    grid-template-columns: 100px 150px 100px;
+    grid-gap: 5px;
+    margin-top: 20px;
+
+
+    li {
+        text-align: center;
+        border: 1px solid black;
+        padding: 10px;
+        text-transform: uppercase;
+        font-family: Novecento Sans Web;
     }
 }

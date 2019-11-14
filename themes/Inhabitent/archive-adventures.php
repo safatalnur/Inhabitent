@@ -1,6 +1,9 @@
 <?php get_header(); ?>
+<?php the_posts_navigation();?>
 
-
+<div class="adventures-header">
+    <h2>latest adventures</h2>
+</div>
 <div class="adventures-main">
 <?php if( have_posts() ) :
 
@@ -15,7 +18,7 @@
 </div>
     <?php endwhile;?>
 
-    <?php the_posts_navigation();?>
+    
 
 <?php else : ?>
         <p>No posts found</p>
