@@ -1,17 +1,18 @@
 <?php get_header(); ?>
 
+
+<div class="adventures-main">
 <?php if( have_posts() ) :
 
 //The WordPress Loop: loads post content 
     while( have_posts() ) :
         the_post(); ?>
-    
-    <h2><?php the_title(); ?></h2>
+<div class="adventures-title">
+    <p><?php the_title(); ?></p>
     <?php the_post_thumbnail('large');?>
-    <!-- <h3><?php the_permalink();?></h3> -->
-    <!-- <?php the_content(); ?> -->
-    
-    <!-- Loop ends -->
+    <a href="<?php the_permalink(); ?>" class="btn transparent-btn">Read more</a>
+
+</div>
     <?php endwhile;?>
 
     <?php the_posts_navigation();?>
@@ -20,5 +21,6 @@
         <p>No posts found</p>
 <?php endif;?>
 
+</div>
     
 <?php get_footer();?>
