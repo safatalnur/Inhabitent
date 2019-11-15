@@ -26,4 +26,23 @@
 .product_type_blocks {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+
+    img {
+        width: 50px;
+        height: 50px;
+    }
+
+
+}
+
+.btn {
+    background-color: #248A83;
+    font-family: Novecento Sans Web;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    // display: flex;
+
+    
 }

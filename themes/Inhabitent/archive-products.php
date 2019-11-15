@@ -1,4 +1,4 @@
-<!-- shop -->
+<!-- archive product shop -->
 
 <?php get_header(); ?>
 <!-- <?php the_posts_navigation();?> -->

@@ -13,17 +13,19 @@
     <p><?php echo $term->description; ?></p>
 </div>
 
-<?php if( have_posts() ) :
+<div class="product-type-content">
+    <?php if( have_posts() ) :
 
 //The WordPress Loop: loads post content 
     while( have_posts() ) :
         the_post(); ?>
-    
+    <div class="product-type-image">
     <!-- <h2><?php the_title(); ?></h2> -->
-    <?php the_post_thumbnail('small');?>
+    <?php the_post_thumbnail('large');?>
+    </div>
     <!-- <h3><?php the_permalink();?></h3> -->
     <!-- <?php the_content(); ?> -->
-    <?php echo "$ " . get_field('price');?>
+    <!-- <?php echo "$ " . get_field('price');?> -->
 
     <!-- Loop ends -->
     <?php endwhile;?>
@@ -33,6 +35,8 @@
 <?php else : ?>
         <p>No posts found</p>
 <?php endif;?>
+
+</div>
 
     
 <?php get_footer();?>
