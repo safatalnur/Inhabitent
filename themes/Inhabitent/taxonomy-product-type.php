@@ -19,13 +19,23 @@
 //The WordPress Loop: loads post content 
     while( have_posts() ) :
         the_post(); ?>
+    
     <div class="product-type-image">
-    <!-- <h2><?php the_title(); ?></h2> -->
-    <?php the_post_thumbnail('large');?>
+        <a href="<?php the_permalink();?>">
+        <?php the_post_thumbnail('large');?>
+  
+    
+
+        <figcaption class="figure-caption">
+            <h2><?php echo the_title() . "....................." . "$ " . get_field('price');?></h2>
+        </a>
+
+
+        </figcaption>
     </div>
+
     <!-- <h3><?php the_permalink();?></h3> -->
     <!-- <?php the_content(); ?> -->
-    <!-- <?php echo "$ " . get_field('price');?> -->
 
     <!-- Loop ends -->
     <?php endwhile;?>

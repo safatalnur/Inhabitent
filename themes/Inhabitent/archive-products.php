@@ -23,17 +23,19 @@
 
     </ul>
 </Div>
+
+<div class="shop-picture">
 <?php if( have_posts() ) :
 
 //The WordPress Loop: loads post content 
     while( have_posts() ) :
         the_post(); ?>
-    <div class="shop-picture">
+ 
+    
+    <!-- <a href="<?php the_permalink();?>"> -->
     <?php the_post_thumbnail('large');?>
-    <!-- <h2><?php the_title(); ?></h2> -->
-    </div>
+    
 
-    <!-- <h3><?php the_permalink();?></h3> -->
     <!-- <?php the_content(); ?> -->
     <!-- <?php echo "$ " . get_field('price');?> -->
     
@@ -44,6 +46,6 @@
 <?php else : ?>
         <p>No posts found</p>
 <?php endif;?>
-
+</div>
     
 <?php get_footer();?>
