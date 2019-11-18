@@ -38,7 +38,8 @@
 
     img {
         width: 200px;
-        height: 200px;        
+        height: 200px;   
+        filter: none;     
     }
     
     // grid-template-columns:  20% 20% 20% 20%;
@@ -74,6 +75,7 @@
     grid-template-columns:  repeat(4, 1fr);
     
     grid-gap: 20px;
+   
 
     // height: 300px;
     // grid-gap: 20px;
@@ -92,12 +94,15 @@
         // width: 85%;
         grid-template-columns: 1fr;
         padding: 10px;
-        border: 1px solid #c8c8c8;
+        border: 1px solid #e1e1e1;
         margin-top: -10px;
-        text-decoration: none;
-        // box-shadow: 60px red;
-
+        border-top: 5px solid #e1e1e1;
         
+
+        h2 {
+            text-decoration: none;
+        
+        }
     }
 }
 
@@ -158,3 +163,5 @@
         font-family: $nav-font;
     }
 }
+
+//single-products end here

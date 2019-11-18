@@ -21,6 +21,8 @@
     </div>
 <?php the_posts_navigation();?>
 </section>
+
+<!-- product-type section -->
 <?php $product_types = get_terms('product_type', array(
     'hide_empty' => false,
     'orderby' => 'name',
@@ -46,7 +48,7 @@
             ?>
         <div class="product_type_block_wrapper">
         <img src="<?php echo get_stylesheet_directory_uri();?>/images/product-type-icons/<?php echo $term->slug;?>.svg"/>
-            <p><?php echo $term->descripton; ?></p>
+            <p><?php echo $term->description; ?></p>
             <a href="<?php echo get_term_link( $term ); ?>" class="product-type-btn" ><?php echo $term->name;?> STUFF</a>
         </div>
         <?php endforeach;?>
@@ -60,7 +62,7 @@
 
 
 
-    
+ 
     <?php
     $args = array( 'numbersposts' => 3, 'order' => 'ASC', 'orderby' => 'title');
     $postslist = get_posts( $args);

@@ -24,11 +24,11 @@
         <a href="<?php the_permalink();?>">
         <?php the_post_thumbnail('large');?>
   
-    
+    </a>
 
         <figcaption class="figure-caption">
             <h2><?php echo the_title() . "....................." . "$ " . get_field('price');?></h2>
-        </a>
+       
 
 
         </figcaption>

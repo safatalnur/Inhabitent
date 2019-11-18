@@ -25,16 +25,33 @@
 
 .product_type_blocks {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 20%);
+    justify-content: space-around;
+  
     text-align: center;
+    
+
 
     img {
         width: 50px;
         height: 50px;
+        filter: none;
     }
 
-
+    p {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        
+        
+    }
 }
+.product_type_block_wrapper {
+    border: 1px solid #e1e1e1;
+    padding: 20px;
+    border-top: 5px solid #e1e1e1;
+}
+
 
 .product-type-btn {
     background-color: #248A83;
