@@ -10,8 +10,16 @@
 <body <?php body_class();?>>
 <!-- <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/home-hero.jpg" /> -->
 <!-- <a href="/inhabitent/"><img class="home-link" src="<?php echo get_stylesheet_directory_uri();?>\images\logos\inhabitent-logo-tent.svg"></a> -->
-<?php wp_nav_menu(array('theme_location' => 'primary'));?> 
-<?php echo get_search_form();?>
+<nav>
+
+    <a href="/inhabitent/"><img class="home-link" src="<?php echo get_stylesheet_directory_uri();?>\images\logos\inhabitent-logo-tent-white.svg"></a>
+    <div class="nav-right">
+        <?php wp_nav_menu(array('theme_location' => 'primary'));?> 
+        <?php echo get_search_form();?>
+    </div>
+</nav>
+
+
 
 
 <!-- <h1><i class="fas fa-search"></i></h1> -->

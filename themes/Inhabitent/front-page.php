@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<h1><i class="fas fa-search"></i></h1>
 
 <!-- inserting products -->
 
@@ -106,14 +105,14 @@
 <?php
     $args = array( 
                 'post_type'=>'adventures', 
-                'order' => 'dSC', 
+                'order' => 'ASC', 
                 'orderby' => 'date');
     $adventureslist = get_posts( $args);
 
       
     
     foreach ($adventureslist as $post): setup_postdata($post); ?>
-        <div class="inhabitent-adventures-image">
+        <figure class="inhabitent-adventures-image">
             <?php the_post_thumbnail('large'); ?>
         
         
@@ -121,11 +120,15 @@
                 <p><?php the_title();?></p>
                 <a href="<?php the_permalink(); ?>" class="btn inhabitent-transparent-btn">Read more</a>
             </div>
-        </div>
+        </figure>
     <?php endforeach;?>
 
-</div>
+    
 
+</div>
+<div class="inhabitent-adventures-link">
+    <p><a href="/inhabitent/adventures">more adventures</a></p>
+</div>
 
 <?php else : ?>
         <p>No posts found</p>

@@ -102,25 +102,66 @@ body {
 h2 {
   font-family: "Novecento Sans Web DemiBold"; }
 
-.menu {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 5fr 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
-  color: white;
+nav {
   position: absolute;
-  top: 5%;
-  font-family: "Novecento Sans Web";
-  border-bottom: 1px solid red;
-  z-index: 9999; }
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  color: white; }
 
-.menu a {
-  color: red;
-  text-decoration: none;
-  text-align: center; }
+.home-link {
+  width: 50px;
+  -webkit-filter: none;
+          filter: none; }
 
-#menu-item-39 {
-  padding-left: 30px; }
+.nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 600px;
+  color: white; }
+  .nav-right ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0px 20px; }
+  .nav-right li {
+    padding: 0px 20px;
+    text-decoration: none; }
+    .nav-right li a {
+      color: white;
+      text-decoration: none;
+      font-family: "Novecento Sans Web"; }
+
+#ajaxsearchlite1 {
+  background: transparent;
+  border: 0; }
+
+.proinput {
+  background: transparent; }
+
+.menue-main-container {
+  text-decoration: none; }
 
 footer {
   background: url(images/dark-wood.png);
@@ -257,22 +298,34 @@ img {
 
 .inhabitent-adventures {
   display: grid;
-  grid-template-columns: repeat(2, 40%);
+  width: 90%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  grid-gap: 20px; }
+  .inhabitent-adventures figure:nth-child(1) {
+    grid-row: 1/3; }
+  .inhabitent-adventures figure:nth-child(2) {
+    grid-column: 2/4; }
+  .inhabitent-adventures figure:nth-child(3) {
+    grid-column: 2/3; }
+  .inhabitent-adventures figure:nth-child(4) {
+    grid-column: 3/4; }
   .inhabitent-adventures .inhabitent-adventures-image {
     position: relative; }
     .inhabitent-adventures .inhabitent-adventures-image img {
       width: 100%;
       -o-object-fit: cover;
-         object-fit: cover; }
+         object-fit: cover;
+      height: 300px; }
+      .inhabitent-adventures .inhabitent-adventures-image img figure:nth-child(1) {
+        width: 630px; }
     .inhabitent-adventures .inhabitent-adventures-image div {
       position: absolute;
       top: 0; }
       .inhabitent-adventures .inhabitent-adventures-image div p {
         color: white;
-        font-size: 60px;
+        font-size: 30px;
         line-height: 1.75;
         padding: 30px;
         font-family: Merriweather Web Light;
@@ -286,6 +339,18 @@ img {
         padding: 10px;
         text-transform: uppercase;
         margin-left: 30px; }
+
+.inhabitent-adventures-link {
+  margin: 50px 0px; }
+  .inhabitent-adventures-link a {
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #248A83;
+    background-color: #248A83;
+    color: white;
+    padding: 20px;
+    font-family: "Novecento Sans Web";
+    margin-left: 30px; }
 
 .adventures-header {
   text-align: center;
@@ -393,6 +458,25 @@ img {
 
 .journal-sidebar {
   margin-left: 50px; }
+
+.single-journal {
+  display: grid;
+  grid-template-columns: 70% 30%; }
+
+.single-journal-main {
+  width: 90%; }
+
+.single-journal-social {
+  display: grid;
+  grid-template-columns: 100px 150px 100px;
+  grid-gap: 5px;
+  margin-top: 20px; }
+  .single-journal-social li {
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: "Novecento Sans Web"; }
 
 .about-image img {
   width: 100%;
