@@ -62,24 +62,69 @@
 
 
 
- 
+ <!-- post type starts here -->
+
+ <div class="inhabitent-journal-title">
+
+        <h3>inhabitent journal</h3>
+
+        </div>
+
+<div class="inhabitent-journal">
     <?php
-    $args = array( 'numbersposts' => 3, 'order' => 'ASC', 'orderby' => 'title');
+    $args = array( 
+                'post_type'=>'post',
+                'posts_per_page' => 3, 
+                'order' => 'dSC', 
+                'orderby' => 'date');
     $postslist = get_posts( $args);
+
+      
     
     foreach ($postslist as $post): setup_postdata($post); ?>
     
-        <div>
-
-            <?php the_date(); ?>
-            <brt />>
-            <?php the_title();?>
-            <?php echo wp_trim_words(get_the_excerpt(), 10, "..."); ?>
+        <div class="inhabitent-journal-image">
+            <?php the_post_thumbnail('large'); ?>
+            <div class="inhabitent-journal-subtitle">
+                <?php the_date(); ?>
+                <?php the_title();?>
+                <!-- <?php echo wp_trim_words(get_the_excerpt(), 10, "..."); ?> -->
+            </div>
         </div>
     <?php endforeach;?>
     
-    <h1>Hey this is the home page</h1> -->
+    <!-- <h1>Hey this is the home page</h1> -->
    
+</div>
+
+<div class="inhabitent-adventures-title">
+        <h3>latest adventures</h3>
+
+</div>
+
+<div class="inhabitent-adventures">
+<?php
+    $args = array( 
+                'post_type'=>'adventures', 
+                'order' => 'dSC', 
+                'orderby' => 'date');
+    $adventureslist = get_posts( $args);
+
+      
+    
+    foreach ($adventureslist as $post): setup_postdata($post); ?>
+        <div class="inhabitent-adventures-image">
+            <?php the_post_thumbnail('large'); ?>
+        
+        
+            <div>
+                <p><?php the_title();?></p>
+                <a href="<?php the_permalink(); ?>" class="btn inhabitent-transparent-btn">Read more</a>
+            </div>
+        </div>
+    <?php endforeach;?>
+
+</div>
 
 
 <?php else : ?>

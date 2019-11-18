@@ -16,7 +16,9 @@
             <?php the_post_thumbnail('large');?>
         </div>
         
-        <p><?php the_content(); ?></p>
+        <?php echo wp_trim_words(get_the_content(), 50, '[...]'); ?>
+
+        
         <a href="<?php the_permalink();?>" class="btn transparent-post-btn">read more →</a>
         
         <!-- Loop ends -->
