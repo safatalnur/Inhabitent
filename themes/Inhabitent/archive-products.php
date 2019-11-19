@@ -1,14 +1,12 @@
 <!-- archive product shop -->
 
 <?php get_header(); ?>
-<!-- <?php the_posts_navigation();?> -->
-
 
 <div class="shop-header">
     <h2>shop stuff</h2>
+
     <ul class="product-nav">
         <?php
-
         $terms = get_terms ([
             'taxonomy' => 'product-type',
             'hide-empty' => false,
@@ -18,9 +16,6 @@
             echo '<li><a href=' . get_term_link($term) . '>' .$term->name . '</a></li>';
         }
         ?>
-    
-
-
     </ul>
 </div>
 
@@ -31,17 +26,17 @@
     while( have_posts() ) :
         the_post(); ?>
  
+        <div class="archive-product-image">
+        <a href="<?php the_permalink();?>">
+        <?php the_post_thumbnail('large');?>
+        </a>
     
-    <!-- <a href="<?php the_permalink();?>"> -->
-    <?php the_post_thumbnail('large');?>
-    
-
-    <!-- <?php the_content(); ?> -->
-    <!-- <?php echo "$ " . get_field('price');?> -->
-    
+        <figcaption class="archive-product-caption">
+            <h2><?php echo the_title() . "........." . "$ " . get_field('price');?></h2>
+        </figcaption>
+        </div>
     <!-- Loop ends -->
     <?php endwhile;?>
-
 
 <?php else : ?>
         <p>No posts found</p>
