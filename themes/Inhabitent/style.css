@@ -391,7 +391,7 @@ img {
   text-align: center;
   text-transform: uppercase;
   font-size: 25px;
-  padding: 25px;
+  padding: 70px 0px 40px;
   border-bottom: 1px dashed #c8c8c8; }
 
 .adventures-main {
@@ -406,6 +406,7 @@ img {
     position: relative; }
     .adventures-main .adventures-title img {
       width: 100%;
+      height: 100%;
       -o-object-fit: cover;
          object-fit: cover; }
     .adventures-main .adventures-title div {
@@ -413,7 +414,7 @@ img {
       top: 0; }
       .adventures-main .adventures-title div p {
         color: white;
-        font-size: 60px;
+        font-size: 40px;
         line-height: 1.75;
         padding: 30px;
         font-family: Merriweather Web Light; }
@@ -450,11 +451,12 @@ img {
     border: 1px solid black;
     padding: 10px;
     text-transform: uppercase;
-    font-family: Novecento Sans Web; }
+    font-family: "Novecento Sans Web"; }
 
 .journal-page {
   display: grid;
-  grid-template-columns: 70% 30%; }
+  grid-template-columns: 70% 30%;
+  padding-top: 60px; }
   .journal-page a {
     width: 150px;
     text-decoration: none;
@@ -473,7 +475,8 @@ img {
   margin-left: 30px; }
 
 .journal-post-image {
-  position: relative; }
+  position: relative;
+  padding-top: 40px; }
   .journal-post-image img {
     width: 100%;
     -o-object-fit: cover;
@@ -492,14 +495,25 @@ img {
     padding: 20px 30px; }
 
 .journal-sidebar {
+  margin-top: -40px;
   margin-left: 50px; }
+
+#custom_html-5 .textwidget {
+  color: #248A83; }
+
+#custom_html-6 {
+  padding-top: 40px;
+  font-family: "Novecento Sans Web DemiBold"; }
 
 .single-journal {
   display: grid;
-  grid-template-columns: 70% 30%; }
+  grid-template-columns: 70% 30%;
+  padding-top: 60px; }
 
 .single-journal-main {
   width: 90%; }
+  .single-journal-main img {
+    padding-top: 40px; }
 
 .single-journal-social {
   display: grid;

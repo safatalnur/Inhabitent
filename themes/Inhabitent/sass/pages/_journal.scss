@@ -2,6 +2,7 @@
 .journal-page {
     display: grid;
     grid-template-columns: 70% 30%;
+    padding-top: 60px;
 
     a {
         width: 150px;
@@ -26,6 +27,7 @@
 
 .journal-post-image {
     position: relative;
+    padding-top: 40px;
 
     img {
         width: 100%;
@@ -49,17 +51,34 @@
 }
 
 .journal-sidebar {
+    margin-top: -40px;
     margin-left: 50px;
 }
-
+#custom_html-5 {
+    .textwidget {
+    
+        color: #248A83;
+    
+}
+}
+#custom_html-6 {
+    padding-top: 40px;
+    font-family: $header-font;
+}
 
 .single-journal {
     display: grid;
     grid-template-columns: 70% 30%;
+    padding-top: 60px;
 }
 
 .single-journal-main {
     width: 90%;
+
+    img {
+        padding-top: 40px;
+
+    }
 }
 
 .single-journal-social {
