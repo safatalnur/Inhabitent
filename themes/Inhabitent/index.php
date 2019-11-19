@@ -15,6 +15,12 @@
         <div class="journal-post-image">
             <h2><?php the_title(); ?></h2>
             <?php the_post_thumbnail('large');?>
+        
+        
+        <div class="journal-post-subimage">
+            <p><?php the_date(); ?> <span><?php echo "/". "by mandi wise"; ?></span></p>
+        </div>
+
         </div>
         
         <?php echo wp_trim_words(get_the_content(), 50, '[...]'); ?>
