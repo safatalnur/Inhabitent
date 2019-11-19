@@ -9,6 +9,14 @@ body {
     display: grid;
     grid-template-columns: 70% 30%;
 }
+.findus-form {
+    padding-top: 40px;
+    width: 80%;
+
+    h2 {
+        font-size: 24px;
+    }
+}
 
 .widgettitle {
     letter-spacing: .2rem;
