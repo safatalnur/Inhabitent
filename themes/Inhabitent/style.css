@@ -232,6 +232,33 @@ footer {
   color: white;
   text-align: center; }
 
+.journal-sidebar {
+  margin-top: -40px;
+  margin-left: 50px; }
+
+#custom_html-5 .textwidget p {
+  color: #248A83; }
+  #custom_html-5 .textwidget p i {
+    color: black; }
+  #custom_html-5 .textwidget p span {
+    margin-left: 10px; }
+
+#custom_html-5 .textwidget h3 {
+  font-family: "Merriweather Web Light"; }
+  #custom_html-5 .textwidget h3 span {
+    margin-left: 10px; }
+
+#custom_html-6 {
+  padding-top: 40px;
+  font-family: "Merriweather Web Light"; }
+  #custom_html-6 p {
+    font-weight: bold; }
+    #custom_html-6 p span {
+      font-weight: normal; }
+
+#archives-3 {
+  padding-top: 40px; }
+
 img {
   width: 100%;
   position: relative;
@@ -457,7 +484,7 @@ img {
   display: grid;
   grid-template-columns: 70% 30%;
   padding-top: 60px; }
-  .journal-page a {
+  .journal-page .btn {
     width: 150px;
     text-decoration: none;
     text-transform: uppercase;
@@ -493,17 +520,6 @@ img {
     font-size: 24px;
     text-transform: uppercase;
     padding: 20px 30px; }
-
-.journal-sidebar {
-  margin-top: -40px;
-  margin-left: 50px; }
-
-#custom_html-5 .textwidget {
-  color: #248A83; }
-
-#custom_html-6 {
-  padding-top: 40px;
-  font-family: "Novecento Sans Web DemiBold"; }
 
 .single-journal {
   display: grid;

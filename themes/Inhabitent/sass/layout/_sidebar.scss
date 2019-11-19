@@ -1,0 +1,39 @@
+.journal-sidebar {
+    margin-top: -40px;
+    margin-left: 50px;
+}
+#custom_html-5 {
+    .textwidget {
+        p{
+        color: #248A83;
+            i {
+                color: black;
+            }
+            span {
+                margin-left: 10px;
+            }
+        }
+        h3 {
+            font-family: $main-font;
+            span {
+                margin-left: 10px;
+            }
+        }
+}
+}
+#custom_html-6 {
+    padding-top: 40px;
+    font-family: $main-font;
+
+    p {
+        font-weight: bold;
+
+        span {
+            font-weight: normal;
+        }
+    }
+}
+
+#archives-3 {
+    padding-top: 40px;
+}

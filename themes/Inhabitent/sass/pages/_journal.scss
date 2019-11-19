@@ -4,7 +4,7 @@
     grid-template-columns: 70% 30%;
     padding-top: 60px;
 
-    a {
+    .btn {
         width: 150px;
         text-decoration: none;
         text-transform: uppercase;
@@ -50,21 +50,6 @@
     }
 }
 
-.journal-sidebar {
-    margin-top: -40px;
-    margin-left: 50px;
-}
-#custom_html-5 {
-    .textwidget {
-    
-        color: #248A83;
-    
-}
-}
-#custom_html-6 {
-    padding-top: 40px;
-    font-family: $header-font;
-}
 
 .single-journal {
     display: grid;
