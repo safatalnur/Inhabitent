@@ -8,9 +8,22 @@
     while( have_posts() ) :
         the_post(); ?>
     
+    <div class="journal-single-image">
     <h2><?php the_title(); ?></h2>
     <?php the_post_thumbnail('large');?>
+    
+
+    <div class="journal-single-subimage">
+            <p><?php the_date(); ?> <span><?php echo " / ". "comments". " / " . "by mandi wise"; ?></span></p>
+    </div>
+
+    </div>
+
     <?php the_content(); ?>
+    <div class="single-journal-posted">
+        <p>posted in→  <?php echo  the_Category(''); ?></p>
+        <p>tagged→  <?php echo the_Tags(''); ?></p>
+    </div>
     
     <div class="single-journal-awesome">
         <ul class="single-journal-social">

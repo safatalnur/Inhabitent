@@ -18,7 +18,7 @@
         
         
         <div class="journal-post-subimage">
-            <p><?php the_date(); ?> <span><?php echo "/". "by mandi wise"; ?></span></p>
+            <p><?php the_date(); ?> <span><?php echo " / ". "comments". " / ". "by mandi wise"; ?></span></p>
         </div>
 
         </div>
