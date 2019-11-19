@@ -29,7 +29,7 @@
 )); ?>
 
 <div class="shop-stuff">
-    <h2>SHOP STUFF</h2>
+    <h3>SHOP STUFF</h3>
 </div>
 
 <div class="shop-item">
@@ -85,9 +85,9 @@
         <div class="inhabitent-journal-image">
             <?php the_post_thumbnail('large'); ?>
             <div class="inhabitent-journal-subtitle">
-                <?php the_date(); ?>
-                <?php the_title();?>
-                <!-- <?php echo wp_trim_words(get_the_excerpt(), 10, "..."); ?> -->
+                <p><?php the_date(); ?></p>
+                <h3><?php the_title();?></h3>
+                <a href="<?php the_permalink(); ?>" class="btn journal-transparent-btn">Read entry</a>
             </div>
         </div>
     <?php endforeach;?>

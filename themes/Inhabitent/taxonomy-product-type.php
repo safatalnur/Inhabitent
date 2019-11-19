@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-
 <?php $term = get_term_by (
         'slug',
         get_query_var( 'term'),
@@ -23,19 +22,12 @@
     <div class="product-type-image">
         <a href="<?php the_permalink();?>">
         <?php the_post_thumbnail('large');?>
-  
-    </a>
+        </a>
 
         <figcaption class="figure-caption">
-            <h2><?php echo the_title() . "....................." . "$ " . get_field('price');?></h2>
-       
-
-
+            <h2><?php echo the_title() . ".................." . "$ " . get_field('price');?></h2>
         </figcaption>
-    </div>
-
-    <!-- <h3><?php the_permalink();?></h3> -->
-    <!-- <?php the_content(); ?> -->
+     </div>  
 
     <!-- Loop ends -->
     <?php endwhile;?>
@@ -47,6 +39,5 @@
 <?php endif;?>
 
 </div>
-
-    
+ 
 <?php get_footer();?>

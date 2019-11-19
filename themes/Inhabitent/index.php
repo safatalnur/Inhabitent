@@ -1,6 +1,7 @@
  <!-- journal page -->
 
-<?php get_header(); ?>
+<?php get_header();?>
+
 
 <section class="journal-page">
     

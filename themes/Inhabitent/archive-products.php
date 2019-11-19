@@ -4,7 +4,7 @@
 <!-- <?php the_posts_navigation();?> -->
 
 
-<Div class="shop-header">
+<div class="shop-header">
     <h2>shop stuff</h2>
     <ul class="product-nav">
         <?php
@@ -22,7 +22,7 @@
 
 
     </ul>
-</Div>
+</div>
 
 <div class="shop-picture">
 <?php if( have_posts() ) :

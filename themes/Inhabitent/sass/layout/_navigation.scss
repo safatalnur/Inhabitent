@@ -5,12 +5,16 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    color: white;
-    // border-bottom: 1px solid #e1e1e1;
+    color: #248A83;
+    border-bottom: 1px solid #e1e1e1;
+    
+
+
 }
 
 .home-link {
     width: 50px;
+    margin-left: 100px;
     filter: none;
 }
 
@@ -18,8 +22,9 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 600px;
-    color: white;
+    width: 650px;
+    color: #248A83;
+    text-transform: uppercase;
     
 
     ul {
@@ -36,7 +41,7 @@ nav {
         text-decoration: none;
          
         a {
-            color: white;
+            color: #248A83;
             text-decoration: none;
             font-family: $nav-font;
         }
@@ -57,35 +62,3 @@ nav {
     text-decoration: none;
 
 }
-
-
-
-
-// .menu{
-//     width: 100%;
-//     display: grid;
-//     grid-template-columns: 5fr 1fr 1fr 1fr 1fr 1fr;
-//     grid-gap: 10px;
-//     color: white;
-//     position: absolute;
-//     top: 5%;
-//     font-family: $nav-font;
-//     border-bottom: 1px solid red;
-    
-   
-
-    
-//     // transform: translate(-50%,-50%);
-//     z-index: 9999;
-// }
-    
-// .menu a {
-//     color: red;
-//     text-decoration: none;
-//     text-align: center;
-
-// }
-
-// #menu-item-39 {
-//     padding-left: 30px;
-// }
