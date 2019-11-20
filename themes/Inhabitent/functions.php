@@ -133,10 +133,6 @@ function inhabitent_product_types() {
   }
  
   add_action( 'init', 'inhabitent_product_types' );
-
-
-
-
-
-
 ?>
+
+<!-- Change navbar color -->

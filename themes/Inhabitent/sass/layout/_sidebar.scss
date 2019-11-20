@@ -1,6 +1,12 @@
 .journal-sidebar {
     margin-top: -40px;
-    margin-left: 50px;
+    padding-left: 50px;
+    border-left: 1px solid #e1e1e1;
+}
+
+.single-journal-sidebar {
+    padding-left: 50px;
+    border-left: 1px solid #e1e1e1;
 }
 #custom_html-5 {
     .textwidget {

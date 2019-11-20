@@ -22,6 +22,11 @@
 <div class="shop-picture">
 <?php if( have_posts() ) :
 
+query_posts(array (
+    'order' => 'ASC',
+    'order by' => 'name',
+    'post_type' => 'products'
+));
 //The WordPress Loop: loads post content 
     while( have_posts() ) :
         the_post(); ?>

@@ -87,6 +87,7 @@
 
     }
     p {
+        margin-top: 15px;
         font-family: $main-font;
     }
     h3 {
@@ -97,15 +98,16 @@
         
     }
     a {
+        
         position: absolute;
         font-family: $nav-font;
         text-transform: uppercase;
         color: black;
         text-decoration: none;
         border: 1px solid black;
-        padding: 20px;
+        padding: 15px;
         margin-left: 20px;
-        bottom: 20px;
+        bottom: 15px;
     }
 }
 .inhabitent-journal-subtitle {
