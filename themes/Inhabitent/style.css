@@ -103,6 +103,7 @@ h2 {
   font-family: "Novecento Sans Web DemiBold"; }
 
 nav {
+  padding-top: 30px;
   position: absolute;
   z-index: 1;
   display: -webkit-box;
@@ -115,13 +116,19 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
-  color: #248A83;
-  border-bottom: 1px solid #e1e1e1; }
+  width: 100%; }
 
-.home-link {
-  width: 50px;
-  margin-left: 100px;
+.home-link-white {
+  width: 75px;
+  position: absolute;
+  margin-left: 60px;
+  -webkit-filter: none;
+          filter: none; }
+
+.home-link-green {
+  width: 75px;
+  position: absolute;
+  margin-left: 60px;
   -webkit-filter: none;
           filter: none; }
 
@@ -137,7 +144,6 @@ nav {
       -ms-flex-pack: center;
           justify-content: center;
   width: 650px;
-  color: #248A83;
   text-transform: uppercase; }
   .nav-right ul {
     display: -webkit-box;
@@ -152,7 +158,6 @@ nav {
     padding: 0px 20px;
     text-decoration: none; }
     .nav-right li a {
-      color: #248A83;
       text-decoration: none;
       font-family: "Novecento Sans Web"; }
 
@@ -605,6 +610,7 @@ img {
     font-family: "Novecento Sans Web"; }
 
 .about-image img {
+  margin: 0px;
   width: 100%;
   height: 525px;
   background-image: cover;

@@ -36,6 +36,38 @@ function my_login_logo() {
     <?php 
 } add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
+function navigation_color() {
+    if ( !is_page('About') && !is_page('Home') && !is_singular('adventures') ) {    ?>    
+
+        <style>
+            .nav-right ul a {
+                color: #248A83;
+            }
+            .home-link-white {
+                display: none;
+            }
+            .navigation-bar {
+                border-bottom: 1px solid #e1e1e1;
+            }
+        </style>
+<?php
+
+     } else { ;?>
+
+        <style>
+            .nav-right ul a {
+                color: white;
+            }
+            .home-link-green {
+                display: none;
+            }
+        </style>
+
+<?php   }
+}
+
+    add_action( 'wp', 'navigation_color');
+
 function inhabitent_logo_url() {
     return home_url();
 }
