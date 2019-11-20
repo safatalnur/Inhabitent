@@ -7,8 +7,13 @@
             //The WordPress Loop: loads post content 
                 while( have_posts() ) :
                     the_post(); ?>
-    
-                    <h2><?php the_title(); ?></h2>
+                    <div class="search-title">
+                        <h2><?php the_title(); ?></h2>
+                        <?php echo wp_trim_words(get_the_content(), 50, '[...]'); ?>
+                        <div class="search-title-read">
+                            <a href="<?php the_permalink();?>" class="btn transparent-post-btn">read more →</a>
+                        </div>
+                    </div>
                     <?php endwhile;?>
 
                 <?php else : ?>
