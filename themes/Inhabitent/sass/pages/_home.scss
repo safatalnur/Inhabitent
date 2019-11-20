@@ -28,7 +28,7 @@
 
 .product_type_blocks {
     display: grid;
-    grid-template-columns: repeat(4, 20%);
+    grid-template-columns: repeat(4, 22%);
     justify-content: space-around;
   
     text-align: center;
@@ -131,8 +131,8 @@
 .inhabitent-adventures {
     display: grid;
     
-    grid-gap: 20px;
-    margin-left: 30px;
+    grid-gap: 25px;
+    margin-left: 35px;
     
     width: 95%;
     height: 620px;

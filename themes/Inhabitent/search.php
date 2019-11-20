@@ -17,7 +17,9 @@
                     <?php endwhile;?>
 
                 <?php else : ?>
-                    <p>No posts found</p>
+                    <div class="no-post">
+                        <h2>No posts found</h2>
+                    </div>
         <?php endif;?>
     </div>  
 
