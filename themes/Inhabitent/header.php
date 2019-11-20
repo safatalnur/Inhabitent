@@ -12,8 +12,8 @@
 
     <a href="<?php echo get_home_url();?>">
 
-    <img class="home-link-green" src="<?php echo get_stylesheet_directory_uri();?>\images\logos\inhabitent-logo-tent.svg"></a>
-    <img class="home-link-white" src="<?php echo get_stylesheet_directory_uri();?>\images\logos\inhabitent-logo-tent-white.svg"></a>
+    <img class="home-link-green" src="<?php echo get_stylesheet_directory_uri();?>\images\logos\inhabitent-logo-tent.svg">
+    <img class="home-link-white" src="<?php echo get_stylesheet_directory_uri();?>\images\logos\inhabitent-logo-tent-white.svg">
 </a>
     <div class="nav-right">
         <?php wp_nav_menu(array('theme_location' => 'primary'));?> 
