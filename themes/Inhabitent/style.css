@@ -654,14 +654,18 @@ img {
 .findus-sidebar {
   margin-top: 20px;
   border-left: 1px solid #e1e1e1;
-  padding-left: 30px; }
+  padding-left: 30px;
+  padding-top: 40px; }
 
 .findus-form {
   margin-top: 20px;
-  padding-top: 40px;
-  width: 80%; }
+  padding-top: 70px;
+  width: 80%;
+  margin-left: 60px; }
   .findus-form h2 {
-    font-size: 24px; }
+    font-size: 24px;
+    padding: 20px 0px;
+    text-transform: uppercase; }
 
 .widgettitle {
   letter-spacing: .2rem; }
@@ -669,6 +673,12 @@ img {
 .widget-area {
   margin-top: 50px;
   line-height: 2.0rem; }
+
+.wpcf7-form p:nth-child(6) input {
+  color: white;
+  background-color: #248A83;
+  padding: 10px 20px;
+  border: none; }
 
 .shop-header h2 {
   padding-top: 60px;

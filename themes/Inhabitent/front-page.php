@@ -48,7 +48,7 @@
         <div class="product_type_block_wrapper">
         <img src="<?php echo get_stylesheet_directory_uri();?>/images/product-type-icons/<?php echo $term->slug;?>.svg"/>
             <p><?php echo $term->description; ?></p>
-            <a href="<?php echo get_term_link(  ); ?>" class="product-type-btn" ><?php echo $term->name;?> STUFF</a>
+            <a href="<?php echo get_term_link( $term ); ?>" class="product-type-btn" ><?php echo $term->name;?> STUFF</a>
         </div>
         <?php endforeach;?>
     </div>
