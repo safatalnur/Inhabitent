@@ -141,3 +141,93 @@
         font-family: $nav-font;
     }
 }
+
+//Comments section
+
+.comment-body {
+    display: grid;
+    grid-template-columns: auto;
+
+    img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+}
+
+.comment-reply-title {
+    font-family: $header-font;
+    font-size: 24px;
+    padding: 20px 0px;
+    text-transform: uppercase;
+}
+
+.comment-form {
+    p {
+        font-family: $main-font;
+        padding-bottom: 20px;
+    }
+}
+
+.comment-form-comment {
+    display: flex;
+    flex-direction: column;
+    label {
+        font-family: $nav-font;
+        text-transform: uppercase;
+    }
+    textarea {
+        width: 700px;
+        height: 200px;
+        background-color: #e1e1e1;
+        border: 1px solid #a1a1a1;
+    }
+}
+
+
+.comment-form-author,
+.comment-form-email {
+    display: inline-block;
+    width: 350px;
+
+    label {
+        font-family: $nav-font;
+        text-transform: uppercase;
+        span {
+            color: #d99054;
+        }
+    }
+    input {
+        width: 345px;
+        height: 50px;
+        background-color: #e1e1e1;
+        border: 1px solid #a1a1a1;
+    }   
+}
+
+.comment-form-url {
+    display: flex;
+    flex-direction: column;
+    input {
+    width: 700px;
+    height: 50px;
+    background-color: #e1e1e1;
+    border: 1px solid #a1a1a1;
+    }
+    label {
+        font-family: $nav-font;
+        text-transform: uppercase;
+    }
+}
+
+.form-submit {
+    input {
+        color: white;
+        background-color: #248A83;
+        padding: 10px 20px;
+        border: 1px solid #248A83;
+        font-family: $nav-font;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+}

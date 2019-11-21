@@ -14,7 +14,7 @@
     
 
     <div class="journal-single-subimage">
-            <p><?php the_date(); ?> <span><?php echo " / ". "comments". " / " . "by mandi wise"; ?></span></p>
+            <p><?php the_date() . " / ";?> <?php echo comments_number() . " / " . "by mandi wise"; ?></p>
     </div>
 
     </div>
@@ -33,6 +33,14 @@
         </ul>
     </div>
     <!-- Loop ends -->
+    
+
+    <?php 
+        if ( comments_open() || get_comments_number()):
+                comments_template();
+        endif;
+    ?>
+    
     <?php endwhile;?>
 
     <?php the_posts_navigation();?>

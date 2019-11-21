@@ -609,6 +609,85 @@ img {
     text-transform: uppercase;
     font-family: "Novecento Sans Web"; }
 
+.comment-body {
+  display: grid;
+  grid-template-columns: auto; }
+  .comment-body img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; }
+
+.comment-reply-title {
+  font-family: "Novecento Sans Web DemiBold";
+  font-size: 24px;
+  padding: 20px 0px;
+  text-transform: uppercase; }
+
+.comment-form p {
+  font-family: "Merriweather Web Light";
+  padding-bottom: 20px; }
+
+.comment-form-comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .comment-form-comment label {
+    font-family: "Novecento Sans Web";
+    text-transform: uppercase; }
+  .comment-form-comment textarea {
+    width: 700px;
+    height: 200px;
+    background-color: #e1e1e1;
+    border: 1px solid #a1a1a1; }
+
+.comment-form-author,
+.comment-form-email {
+  display: inline-block;
+  width: 350px; }
+  .comment-form-author label,
+  .comment-form-email label {
+    font-family: "Novecento Sans Web";
+    text-transform: uppercase; }
+    .comment-form-author label span,
+    .comment-form-email label span {
+      color: #d99054; }
+  .comment-form-author input,
+  .comment-form-email input {
+    width: 345px;
+    height: 50px;
+    background-color: #e1e1e1;
+    border: 1px solid #a1a1a1; }
+
+.comment-form-url {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .comment-form-url input {
+    width: 700px;
+    height: 50px;
+    background-color: #e1e1e1;
+    border: 1px solid #a1a1a1; }
+  .comment-form-url label {
+    font-family: "Novecento Sans Web";
+    text-transform: uppercase; }
+
+.form-submit input {
+  color: white;
+  background-color: #248A83;
+  padding: 10px 20px;
+  border: 1px solid #248A83;
+  font-family: "Novecento Sans Web";
+  text-transform: uppercase;
+  font-size: 16px; }
+
 .about-image img {
   margin: 0px;
   width: 100%;
