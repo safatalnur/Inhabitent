@@ -25,6 +25,7 @@
 
     <div class="search-sidebar">
         <?php get_sidebar();?>
+        <div class="vertical-line"></div>
     </div>
 </section>
 

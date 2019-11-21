@@ -32,6 +32,7 @@
 
     <div class="findus-sidebar">
             <?php get_sidebar();?>
+            <div class="vertical-line"></div>
     </div>
 </div>
     

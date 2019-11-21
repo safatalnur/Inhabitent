@@ -41,6 +41,7 @@
 
     <div class="journal-sidebar">   
         <?php get_sidebar();?>
+        <div class="vertical-line"></div>
     </div>
 
 

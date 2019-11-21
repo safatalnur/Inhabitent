@@ -239,12 +239,50 @@ footer {
 
 .journal-sidebar {
   margin-top: -40px;
-  padding-left: 50px;
-  border-left: 1px solid #e1e1e1; }
+  padding-left: 50px; }
+  .journal-sidebar .vertical-line {
+    border: 1px solid #e1e1e1;
+    position: absolute;
+    top: 60.5;
+    bottom: -3000;
+    left: 70%;
+    z-index: -1; }
 
 .single-journal-sidebar {
+  margin-top: -20px;
   padding-left: 50px;
   border-left: 1px solid #e1e1e1; }
+  .single-journal-sidebar .vertical-line {
+    border: 1px solid #e1e1e1;
+    position: absolute;
+    top: 60.5;
+    bottom: -650;
+    left: 70%;
+    z-index: -1; }
+
+.findus-sidebar {
+  margin-top: 20px;
+  padding-left: 30px;
+  padding-top: 40px; }
+  .findus-sidebar .vertical-line {
+    border: 1px solid #e1e1e1;
+    position: absolute;
+    top: 60.5;
+    bottom: -600;
+    left: 70%;
+    z-index: -1; }
+
+.search-sidebar {
+  margin-top: 20px;
+  padding-left: 30px;
+  padding-top: 40px; }
+  .search-sidebar .vertical-line {
+    border: 1px solid #e1e1e1;
+    position: absolute;
+    top: 60.5;
+    bottom: -600;
+    left: 70%;
+    z-index: -1; }
 
 #custom_html-5 .textwidget p {
   color: #248A83; }
@@ -429,7 +467,7 @@ img {
   text-align: center;
   text-transform: uppercase;
   font-size: 25px;
-  padding: 70px 0px 40px;
+  padding: 90px 0px 40px;
   border-bottom: 1px dashed #c8c8c8; }
 
 .adventures-main {
@@ -473,6 +511,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center; }
   .adventures-content h2 {
+    padding-top: 40px;
     font-size: 20px;
     letter-spacing: .2rem;
     font-family: 'Novecento Sans Web DemiBold'; }
@@ -494,7 +533,7 @@ img {
 .journal-page {
   display: grid;
   grid-template-columns: 70% 30%;
-  padding-top: 60px; }
+  padding-top: 80px; }
   .journal-page .btn {
     width: 150px;
     text-decoration: none;
@@ -546,7 +585,7 @@ img {
 .single-journal {
   display: grid;
   grid-template-columns: 70% 30%;
-  padding-top: 60px;
+  padding-top: 80px;
   margin-left: 30px; }
 
 .single-journal-main {
@@ -730,12 +769,6 @@ img {
   display: grid;
   grid-template-columns: 70% 30%; }
 
-.findus-sidebar {
-  margin-top: 20px;
-  border-left: 1px solid #e1e1e1;
-  padding-left: 30px;
-  padding-top: 40px; }
-
 .findus-form {
   margin-top: 20px;
   padding-top: 70px;
@@ -884,13 +917,10 @@ img {
   width: 100%;
   margin: 0px;
   display: grid;
-  grid-template-columns: 70% 30%; }
-
-.search-sidebar {
-  border-left: 1px solid #e1e1e1; }
+  grid-template-columns: 75% 25%; }
 
 .search {
-  margin-left: 10px;
+  margin-left: 30px;
   width: 90%; }
 
 .search-title {
