@@ -25,7 +25,7 @@
         </a>
 
         <figcaption class="figure-caption">
-            <h2><?php echo the_title() . "........" . "$ " . get_field('price');?></h2>
+            <h2><?php echo the_title() . "......" . "$ " . get_field('price');?></h2>
         </figcaption>
      </div>  
 

@@ -14,7 +14,7 @@
     
 
     <div class="journal-single-subimage">
-            <p><?php the_date() . " / ";?> <?php echo comments_number() . " / " . "by mandi wise"; ?></p>
+            <p><?php the_date();?> / <?php echo comments_number() . " / " . "by mandi wise"; ?></p>
     </div>
 
     </div>
