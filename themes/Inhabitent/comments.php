@@ -8,9 +8,9 @@
 
     <?php
         if (have_comments()) : ?>
-            <h2 class="comments-title">
+            <p class="comments-title">
                 <?php esc_html(comments_number( '0 Comments', '1 Comment', '% Comments'));?>
-            </h2>
+            </p>
 
             <?php if (get_comment_pages_count() > 1 && get_option( 'page_comments')): ?>
             <nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">
@@ -27,9 +27,9 @@
     <ol class="comment-list">
     <?php
         wp_list_comments( array (
-            'style' => 'ol',
-            'short_ping' => true,
-            'avatar_size' => 50
+            // 'style' => 'ol',
+            // 'short_ping' => true,
+            // 'avatar_size' => 1
         ));
     ?>
     </ol>

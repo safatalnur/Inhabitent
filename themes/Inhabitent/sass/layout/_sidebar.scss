@@ -1,58 +1,69 @@
 
+
+
+
 .journal-sidebar {
-    margin-top: -40px;
+    margin-top: -20px;
     padding-left: 50px;
-    .vertical-line {
-        border: 1px solid #e1e1e1;
-        position: absolute;
-        top: 60.5;
-        bottom: -3000;
-        left: 70%;
-        z-index: -1;
-    }
+    border-left: 1px solid #e1e1e1;
+    margin-bottom: -40px;
+//     .vertical-line {
+//         border: 1px solid #e1e1e1;
+//         position: relative;
+//         top: 60.5;
+//         bottom: -3000;
+//         left: 75%;
+//         z-index: -1;
+// }
 }
 
 .single-journal-sidebar {
     margin-top: -20px;
     padding-left: 50px;
     border-left: 1px solid #e1e1e1;
-    .vertical-line {
-        border: 1px solid #e1e1e1;
-        position: absolute;
-        top: 60.5;
-        bottom: -650;
-        left: 70%;
-        z-index: -1;
-    }
+    margin-bottom: -40px;
+
+    // .vertical-line {
+    //     border: 1px solid #e1e1e1;
+    //     position: absolute;
+    //     top: 60.5;
+    //     bottom: -650;
+    //     left: 70%;
+    //     z-index: -1;
+    // }
 
 }
 
 .findus-sidebar {
-    margin-top: 20px;
-    padding-left: 30px;
-    padding-top: 40px;
-    .vertical-line {
-        border: 1px solid #e1e1e1;
-        position: absolute;
-        top: 60.5;
-        bottom: -600;
-        left: 70%;
-        z-index: -1;
-    }
+    margin-top: 60px;
+    padding-left: 50px;
+    border-left: 1px solid #e1e1e1;
+    margin-bottom: -40px;
+
+    // .vertical-line {
+    //     border: 1px solid #e1e1e1;
+    //     position: absolute;
+    //     top: 60.5;
+    //     bottom: -600;
+    //     left: 70%;
+    //     z-index: -1;
+    // }
 }
 
 .search-sidebar {
-    margin-top: 20px;
-    padding-left: 30px;
-    padding-top: 40px;
-    .vertical-line {
-        border: 1px solid #e1e1e1;
-        position: absolute;
-        top: 60.5;
-        bottom: -600;
-        left: 70%;
-        z-index: -1;
-    }
+    margin-top: 60px;
+    padding-left: 50px;
+    border-left: 1px solid #e1e1e1;
+    margin-bottom: -40px;
+
+    // .vertical-line {
+    //     border: 1px solid #e1e1e1;
+    //     position: absolute;
+    //     top: 60.5;
+    //     bottom: -600;
+    //     left: 70%;
+    //     z-index: -1;
+    // }
 
 }
 
@@ -60,11 +71,15 @@
     .textwidget {
         p{
         color: #248A83;
-            i {
+            i::before {
                 color: black;
             }
             span {
                 margin-left: 10px;
+                a {
+                    text-decoration: none;
+                    color: #248A83;
+                }
             }
         }
         h3 {

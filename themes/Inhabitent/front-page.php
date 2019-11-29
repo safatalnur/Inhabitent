@@ -127,7 +127,7 @@
 
 </div>
 <div class="inhabitent-adventures-link">
-    <p><a href="/inhabitent/adventures">more adventures</a></p>
+    <p><a href="<?php echo get_home_url() . '/adventures';?>">more adventures</a></p>
 </div>
 
 <?php else : ?>

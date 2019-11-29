@@ -40,14 +40,14 @@ plugins/*
 # Ignore everything in "themes" except the active theme. #
 # ========================================================== #
 themes/*
-!themes/inhabitent/
+!themes/quotes/
 # Ignore WP Migrate DB Dir #
 # =============== #
 uploads/wp-migrate-db/
 # Ignore packages #
 # =============== #
-themes/inhabitent/node_modules/
-themes/inhabitent/assets
+themes/quotes/node_modules/
+themes/quotes/assets
 Collapse
 
 
